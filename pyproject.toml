@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "windyapp-testtask"
+version = "0.1.0"
+description = ""
+authors = ["dmitr <dmitrij.salenkoff@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.99.1"
+uvicorn = "^0.22.0"
+aiofiles = "^23.1.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pylint = "^2.17.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

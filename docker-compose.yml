@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    #    image: dsalenkov/windy_app_test_task
+    container_name: app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080
+    ports:
+      - "0.0.0.0:8080:8080"
+#  redis:
+#    image: redislabs/redismod
+#    container_name: redis
+#    ports:
+#      - '6379:6379'
+
+
