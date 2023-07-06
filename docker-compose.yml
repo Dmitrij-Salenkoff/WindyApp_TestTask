@@ -3,7 +3,8 @@ version: '3.9'
 services:
   app:
     build: .
-    #    image: dsalenkov/windy_app_test_task
+    # In case if you don't want to build image from Dockerfile
+    #    image: dsalenkov/windy_app_test_task:final
     container_name: app
     command: uvicorn app.main:app --host 0.0.0.0 --port 8080
     ports:
